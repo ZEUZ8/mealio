@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Bottle from "@/components/Bottle"
 
 export default function Home() {
   return (
@@ -41,6 +42,8 @@ export default function Home() {
             Connect Us
           </div>
         </div>
+        <div className=" w-full"><p className="text-white text-start p-2 tracking-tight font-semibold"> What We Offer</p></div>
+        <Bottle/>
       </main>
     </div>
   );
