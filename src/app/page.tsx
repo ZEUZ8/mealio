@@ -4,7 +4,7 @@ import Bottle from "@/components/Bottle";
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between pt-32 pb-10 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert h-5 w-[100px]"
           src="/logo.svg"
@@ -27,29 +27,29 @@ export default function Home() {
             Mealio is coming soon.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+        {/* <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <div
             className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-39.5"
             rel="noopener noreferrer"
           >
-            {/* <Image
+            <Image
               className=" h-5 w-4 "
               src="/favicon-big.png"
               alt="logomark"
               width={30}
               height={28}
-            /> */}
+            />
             Connect Us
           </div>
-        </div>
-        <div className=" w-full">
-          <p className="text-white text-start p-2 tracking-tight font-semibold">
-            {" "}
-            What mealio contains
-          </p>
-        </div>
-        <Bottle />
+        </div> */}
       </main>
+      <div className="w-full p-5">
+         <p className="text-white text-start p-2 tracking-tight font-semibold">
+          {" "}
+          What mealio contains
+        </p>
+        <Bottle />
+      </div>
     </div>
   );
 }
